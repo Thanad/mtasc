@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="cjvm"
+	ProjectGUID="{3BA716A1-291C-465E-8E93-A3E4EAD7E36C}"
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="0">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="ocamake extLib.cma cjvm.vcproj -g"
+				ReBuildCommandLine="ocamake extLib.cma cjvm.vcproj -g -all"
+				CleanCommandLine="ocamake extLib.cma cjvm.vcproj -g -clean"
+				Output="cjvm.exe"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="0">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="ocamake extLib.cmxa cjvm.vcproj"
+				ReBuildCommandLine="ocamake extLib.cmxa cjvm.vcproj -all"
+				CleanCommandLine=" ocamake extLib.cmxa cjvm.vcproj -clean"
+				Output="cjvm.exe"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<File
+			RelativePath=".\jClass.mli">
+		</File>
+		<File
+			RelativePath=".\jCode.ml">
+		</File>
+		<File
+			RelativePath=".\jCode.mli">
+		</File>
+		<File
+			RelativePath=".\jDump.ml">
+		</File>
+		<File
+			RelativePath=".\jDump.mli">
+		</File>
+		<File
+			RelativePath=".\jParse.ml">
+		</File>
+		<File
+			RelativePath=".\jParse.mli">
+		</File>
+		<File
+			RelativePath=".\sample.ml">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

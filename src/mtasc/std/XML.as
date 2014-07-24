@@ -19,6 +19,5 @@ intrinsic class XML extends XMLNode
 	function onLoad(success:Boolean):Void;
 	function onData(src:String):Void;
 	function addRequestHeader(header:Object, headerValue:String):Void;
-	function onHTTPStatus(httpStatus:Number):Void;
 }
 

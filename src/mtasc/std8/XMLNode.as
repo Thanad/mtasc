@@ -34,3 +34,4 @@ intrinsic class XMLNode
 	function getPrefixForNamespace(namespaceURI:String):String;
 	function getNamespaceForPrefix(prefix:String):String;
 }
+

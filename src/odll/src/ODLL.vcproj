@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="ODLL"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Native code|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="."
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="ocamake -opt ODLL.vcproj -o ODLL_opt.exe config.cmx unix.cmxa"
+				ReBuildCommandLine="ocamake -opt ODLL.vcproj -o ODLL_opt.exe config.cmx -all unix.cmxa"
+				Output="ODLL_opt.exe"/>
+		</Configuration>
+		<Configuration
+			Name="Bytecode|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="."
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="ocamake unix.cma config.cmo ODLL.vcproj"
+				ReBuildCommandLine="ocamake unix.cma config.cmo ODLL.vcproj -all"
+				Output="ODLL.exe"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="ML Files"
+			Filter="ml;mly;mll">
+			<File
+				RelativePath="odll.ml">
+			</File>
+		</Filter>
+		<Filter
+			Name="SRC"
+			Filter="">
+			<File
+				RelativePath="C:\Ocaml\src\parsing\asttypes.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\asmcomp\clambda.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\asmcomp\compilenv.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\utils\config.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\utils\consistbl.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\bytecomp\emitcode.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\typing\env.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\typing\ident.ml">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\typing\ident.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\bytecomp\instruct.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\bytecomp\lambda.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\parsing\longident.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\typing\path.ml">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\typing\path.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\typing\primitive.mli">
+			</File>
+			<File
+				RelativePath="C:\Ocaml\src\typing\types.mli">
+			</File>
+		</Filter>
+		<Filter
+			Name="MLI Files"
+			Filter="mli">
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

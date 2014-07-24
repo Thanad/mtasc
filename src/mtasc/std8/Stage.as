@@ -7,8 +7,10 @@ intrinsic class Stage
 	static var showMenu:Boolean;
 	static function addListener(listener:Object):Void;
 	static function removeListener(listener:Object):Void;
-
+	
 	static var displayState : String;
-	static var fullScreenSourceRect : flash.geom.Rectangle;
-	static function onFullScreen( full : Boolean ) : Void;
+	static var fullScreenSourceRect : flash.geom.Rectangle;	
+	static function onFullScreen( full : Boolean ) : Void;	
 }
+
+
